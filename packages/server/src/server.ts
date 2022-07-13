@@ -9,8 +9,6 @@ const app = express();
 
 app.use(express.json());
 
-
-
 async function startServer() {
   const server = new ApolloServer({
     introspection: true,
