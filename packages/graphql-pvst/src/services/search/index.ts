@@ -53,7 +53,7 @@ export const IntelligentSearch = ({
   salesChannel,
   regionId,
   locale
-}) => {
+}:any) => {
   const base = `https://${account}.${environment}.com.br/api/io`;
 
   const getPolicyFacet = (): IStoreSelectedFacet | null => {
