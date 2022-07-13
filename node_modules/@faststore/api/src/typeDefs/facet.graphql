@@ -1,0 +1,77 @@
+union StoreFacet = StoreFacetRange | StoreFacetBoolean
+
+"""
+Search facet range information.
+"""
+type StoreFacetRange {
+  """
+  Facet key.
+  """
+  key: String!
+  """
+  Facet label.
+  """
+  label: String!
+  """
+  Minimum facet range value.
+  """
+  min: StoreFacetValueRange!
+  """
+  Maximum facet range value.
+  """
+  max: StoreFacetValueRange!
+}
+
+"""
+Search facet boolean information.
+"""
+type StoreFacetBoolean {
+  """
+  Facet key.
+  """
+  key: String!
+  """
+  Facet label.
+  """
+  label: String!
+  """
+  Array with information on each facet value.
+  """
+  values: [StoreFacetValueBoolean!]!
+}
+
+"""
+Search facet range value information. Used for minimum and maximum range values.
+"""
+type StoreFacetValueRange {
+  """
+  Search facet range absolute value.
+  """
+  absolute: Float!
+  """
+  Search facet range selected value.
+  """
+  selected: Float!
+}
+
+"""
+Information of a specific facet value.
+"""
+type StoreFacetValueBoolean {
+  """
+  Facet value.
+  """
+  value: String!
+  """
+  Facet value label.
+  """
+  label: String!
+  """
+  Indicates whether facet is selected.
+  """
+  selected: Boolean!
+  """
+  Number of items with this facet.
+  """
+  quantity: Int!
+}

@@ -1,0 +1,25 @@
+"""
+Whenever you make a query that allows for pagination, such as `allProducts` or `allCollections`, you can check `StorePageInfo` to learn more about the complete set of items and use it to paginate your queries.
+"""
+type StorePageInfo {
+  """
+  Indicates whether there is at least one more page with items after the ones returned in the current query.
+  """
+  hasNextPage: Boolean!
+  """
+  Indicates whether there is at least one more page with items before the ones returned in the current query.
+  """
+  hasPreviousPage: Boolean!
+  """
+  Cursor corresponding to the first possible item.
+  """
+  startCursor: String!
+  """
+  Cursor corresponding to the last possible item.
+  """
+  endCursor: String!
+  """
+  Total number of items (products or collections), not pages.
+  """
+  totalCount: Int!
+}

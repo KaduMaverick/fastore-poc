@@ -1,0 +1,13 @@
+{
+  "name": "graphql-pvst",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "private": "true",
+  "devDependencies": {
+    "apollo-server-micro": "^3.10.0"
+  },
+  "dependencies": {
+    "isomorphic-unfetch": "^3.1.0"
+  }
+}

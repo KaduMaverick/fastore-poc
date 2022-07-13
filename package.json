@@ -1,0 +1,15 @@
+{
+  "name": "pvst",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "repository": "git@github.com:KaduMaverick/fastore-poc.git",
+  "author": "Kadu Maverick <50552962+KaduMaverick@users.noreply.github.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^5.1.8"
+  }
+}
