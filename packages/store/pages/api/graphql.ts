@@ -32,7 +32,7 @@ export const config = {
 
 // instanciando o client
 const client = new ApolloClient({
-  uri: 'http://localhost:3000/api/graphql',
+  uri: `${process.env.NEXT_PUBLIC_ENDPOINT}/api/graphql`,
   cache: new InMemoryCache(),
 });
 
