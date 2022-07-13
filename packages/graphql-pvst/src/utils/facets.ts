@@ -1,6 +1,6 @@
 import ChannelMarshal from './channel'
-import type { Maybe } from '../../../__generated__/schema'
-import { BadRequestError } from '../../errors'
+import type { Maybe } from '../__generated__/schema'
+import { BadRequestError } from '../errors'
 
 export interface SelectedFacet {
   key: string

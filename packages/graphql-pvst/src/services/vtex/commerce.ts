@@ -4,7 +4,7 @@ import { fetchAPI } from '../fetch';
 
 // type ValueOf<T> = T extends Record<string, infer K> ? K : never;
 
-export const commerce = ({ account, environment }) => {
+export const commerce = ({ account, environment }:any) => {
   const base = `https://${account}.${environment}.com.br`;
 
   return {
