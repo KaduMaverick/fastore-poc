@@ -23,7 +23,7 @@ const nextConfig = {
     http: true
   },
   {
-    domain: 'https://fastore-poc.vercel.app',
+    domain: 'fastore-poc.vercel.app',
     defaultLocale: "fr-CA"
   },
   
