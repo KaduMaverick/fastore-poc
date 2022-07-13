@@ -20,11 +20,13 @@ const query = gql`
 export async function getStaticProps(args:any) {
   
   const {slug} = args.params
-  console.log(args)
 
   const {data:{
     product
-  }} = await client.query({query: query, variables: { slug: slug + "/p" ?? '', locale: args.locale }})
+  }} = await client.query({
+    query: query, 
+    variables: { slug: slug + "/p" ?? '', locale: args.locale }
+})
   
   return {
     props: {

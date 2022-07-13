@@ -4,7 +4,8 @@ import {enhanceSku} from "./utils/enhanceSku"
 
 export const resolvers = {
   Query: {
-    product: async (_: unknown, { slug, locale }:any) => {
+    product: async (_: unknown, { slug, locale }:any, context:any) => {
+      console.log("context", context)
       const data = await commerce({
         account: 'pivotree',
         environment: 'vtexcommercestable',
