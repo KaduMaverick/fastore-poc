@@ -32,7 +32,7 @@ export const config = {
 
 // instanciando o client
 const client = new ApolloClient({
-  uri: `${process.env.NEXT_PUBLIC_ENDPOINT}/api/graphql`,
+  uri: `${process.env.NODE_ENV === 'production' ? "https://fastore-poc.vercel.app" : "http://localhost:3000" }/api/graphql`,
   cache: new InMemoryCache(),
 });
 
